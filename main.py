@@ -2,10 +2,10 @@ from bs4 import BeautifulSoup
 import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+import os
+client_id = os.environ.get("CLIENT_ID")
 
-client_id = "077cbc4a62834b4db155ecd4ebea9907"
-
-client_secret = "915b68abe03a4ac79b5ac5e34bf835a4"
+client_secret = os.environ.get("CLIENT_SECRET")
 
 date = input("Enter the date you want to travel back in yyyy-mm-dd format : ")
 
